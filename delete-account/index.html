@@ -3,60 +3,123 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Delete Your Lain Dain Account</title>
+  <title>Delete Your Raqam Note Account | اکاؤنٹ ڈیلیٹ کریں</title>
   <style>
-    :root { color-scheme: dark; --bg:#020817; --card:#111b2d; --text:#f8fafc; --muted:#94a3b8; --teal:#14b8a6; --red:#ff174f; --border:#243047; }
-    * { box-sizing: border-box; }
-    body { margin:0; background:var(--bg); color:var(--text); font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; line-height:1.65; }
-    main { width:min(820px,calc(100% - 32px)); margin:48px auto; }
-    .card { background:var(--card); border:1px solid var(--border); border-radius:22px; padding:28px; }
-    h1,h2 { line-height:1.25; } h1 { margin-top:0; font-size:2rem; } h2 { margin-top:2rem; font-size:1.2rem; }
-    p,li { color:var(--muted); } strong { color:var(--text); } a { color:var(--teal); } .warning { color:var(--red); font-weight:700; }
+    :root { color-scheme:dark; --bg:#020817; --card:#111b2d; --text:#f8fafc; --muted:#b6c3d4; --teal:#5eead4; --red:#ff8ca8; --border:#243047; }
+    * { box-sizing:border-box; }
+    body { margin:0; background:var(--bg); color:var(--text); font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; line-height:1.75; }
+    main { width:min(820px,calc(100% - 32px)); margin:36px auto; }
+    .card { background:var(--card); border:1px solid var(--border); border-radius:22px; padding:clamp(20px,4vw,32px); margin:20px 0; }
+    h1,h2 { line-height:1.4; } h1 { margin-top:0; font-size:clamp(1.65rem,5vw,2rem); } h2 { margin-top:1.8rem; font-size:1.2rem; }
+    p,li { color:var(--muted); } strong { color:var(--text); } a { color:var(--teal); text-underline-offset:4px; overflow-wrap:anywhere; }
+    nav { display:flex; flex-wrap:wrap; gap:12px; align-items:center; }
+    nav a,.action { display:inline-block; border:1px solid var(--border); border-radius:12px; padding:10px 16px; }
+    .warning { color:var(--red); font-weight:700; } .updated,footer { font-size:.9rem; color:var(--muted); }
+    section { scroll-margin-top:20px; } ol,ul { padding-inline-start:24px; } li { margin-block:8px; }
+    [lang="ur"] { font-family:"Noto Nastaliq Urdu","Urdu Typesetting","Segoe UI",serif; line-height:2.1; }
+    [lang="ur"] h1,[lang="ur"] h2 { line-height:1.8; } .ltr { direction:ltr; unicode-bidi:isolate; display:inline-block; }
+    a:focus-visible { outline:3px solid var(--teal); outline-offset:5px; }
+    @media print { body{background:white;color:#111} .card{background:white;border-color:#ccc} p,li,strong,h1,h2,footer,.updated{color:#111} a{color:#075e56} }
   </style>
 </head>
 <body>
 <main>
-<section class="card">
-  <h1>Delete Your Lain Dain Account</h1>
-  <p>Lain Dain lets you permanently delete your account and associated app data. Account deletion cannot be undone.</p>
+  <nav aria-label="Page languages">
+    <a href="#english" lang="en">English</a>
+    <a href="#urdu" lang="ur" dir="rtl">اردو</a>
+    <a href="../">Privacy policy / رازداری کی پالیسی</a>
+  </nav>
 
-  <h2>Delete from inside the app</h2>
-  <ol>
-    <li>Open <strong>Lain Dain</strong>.</li>
-    <li>Open <strong>Settings</strong>.</li>
-    <li>Tap <strong>Delete Account</strong>.</li>
-    <li>Confirm your identity when asked.</li>
-    <li>Confirm permanent deletion.</li>
-  </ol>
+  <section class="card" id="english" lang="en" aria-labelledby="en-title">
+    <h1 id="en-title">Delete Your Raqam Note Account</h1>
+    <p class="updated">Last updated: 13 October 2026</p>
+    <p>Raqam Note, by Waleed Inc, lets you request permanent deletion of your account and associated app records. <strong>Completed account deletion cannot be undone.</strong></p>
 
-  <p>The app deletes your Lain Dain user profile, personal transaction records, business entry records and Firebase Authentication account.</p>
+    <h2>Delete from inside the app</h2>
+    <ol>
+      <li>Open <strong>Raqam Note</strong> and go to <strong>Settings</strong>.</li>
+      <li>Tap <strong>Delete Account</strong> and review the deletion notice.</li>
+      <li>Confirm that you want to continue, then confirm your identity when asked using your password or Google account.</li>
+      <li>Keep an internet connection available until the app confirms completion. If it reports an error, deletion may be incomplete; follow the message or contact support.</li>
+    </ol>
 
-  <h2>If you cannot access the app</h2>
-  <p>
-    Open the official Lain Dain Google Play listing and use the
-    <strong>Developer contact</strong> information shown there to request account
-    deletion. Send the request from the email address associated with your Lain Dain
-    account so the request can be verified.
-  </p>
-  <p><a href="https://play.google.com/store/apps/details?id=com.waleedinc.laindain">Open the Lain Dain Google Play listing</a></p>
+    <p>In versions with deletion recovery, reopening the app after an interrupted request may show <strong>Account deletion is unfinished</strong>. Some records may already be deleted. Confirm your identity and choose <strong>Continue account deletion</strong> to remove the remaining data; reopening the app alone does not automatically resume deletion. If you cannot continue, use the request email below. Avoid adding new records from another device while deletion is in progress.</p>
 
-  <h2>Data deleted</h2>
-  <ul>
-    <li>Your Lain Dain account profile.</li>
-    <li>Personal debt, lending and payment records.</li>
-    <li>Business sales, purchases and payment records.</li>
-    <li>Associated due-date records stored in your Lain Dain account.</li>
-  </ul>
+    <h2>Request deletion without the app</h2>
+    <p>Email <a href="mailto:waleediqbale678@gmail.com?subject=Raqam%20Note%20account%20deletion%20request">waleediqbale678@gmail.com</a> with the subject <strong>Raqam Note account deletion request</strong>.</p>
+    <p>Send the request from the email address associated with your Raqam Note account where possible. Identify the account you want deleted and say that you want the account and its associated app data permanently deleted. We may need to verify account ownership before processing the request. Sending an email submits a request; it does not instantly delete the account.</p>
+    <p><a class="action" href="mailto:waleediqbale678@gmail.com?subject=Raqam%20Note%20account%20deletion%20request&amp;body=Please%20permanently%20delete%20my%20Raqam%20Note%20account%20and%20associated%20app%20data.%0A%0AMy%20account%20email%20is%3A%20">Email a deletion request</a></p>
+    <p>You can also find our support contact on the <a href="https://play.google.com/store/apps/details?id=com.waleedinc.laindain">official Raqam Note Google Play listing</a>.</p>
 
-  <p class="warning">Deletion is permanent and cannot be reversed.</p>
+    <h2>Account data deleted</h2>
+    <p>When the account-deletion process successfully completes, it removes:</p>
+    <ul>
+      <li>Your Raqam Note profile and saved app preferences.</li>
+      <li>Personal financial records: debts, lending and linked payments.</li>
+      <li>Business sales, purchases, payment records and their linked payments.</li>
+      <li>Names, optional phone numbers, notes, categories and due dates stored with those records.</li>
+      <li>Records in <strong>Recently Deleted / Bin</strong>, including archived linked payments, and temporary Bin-operation records, where those features are available.</li>
+      <li>The associated Firebase Authentication account.</li>
+    </ul>
 
-  <h2>Local device data</h2>
-  <p>
-    Temporary cached data may remain on a device until Android clears the app's
-    local storage or the app is removed. Scheduled Lain Dain reminders are cancelled
-    when deletion is completed in the app.
-  </p>
-</section>
+    <h2>Account deletion and the 30-day Bin are different</h2>
+    <p>In app versions with the Bin feature, deleting an individual record moves it to <strong>Settings → Recently Deleted</strong>. It can be restored within 30 days or permanently deleted earlier by the user. After its 30-day recovery period expires, it cannot be restored. Expired records are removed from cloud storage when the Bin is opened with an internet connection; if the Bin is not opened online, that cleanup may be delayed.</p>
+    <p><strong>Permanent account deletion does not place your account or records in the Bin and does not give them a 30-day recovery period.</strong></p>
+    <p class="warning">Once account deletion is completed, the account and deleted app records cannot be recovered through Raqam Note.</p>
+
+    <p>Versions with save recovery retain local review copies of unconfirmed saves. Successful in-app account deletion removes the account's recovery copies and unfinished-deletion marker on the device where it completes. Other devices' local data is not remotely erased; clear their app storage or remove the app if you want to remove local copies.</p>
+
+    <h2>Device data, shared copies and third-party services</h2>
+    <p>Scheduled Raqam Note reminders on the device where in-app deletion completes are cancelled. Cached data and generated PDFs may remain on a device until its local app storage is cleared, the app is removed, or the operating system clears the cache.</p>
+    <p>Deleting your account does not remove PDFs you saved outside the app, copies shared with other people, or messages already sent through WhatsApp or SMS. Their storage is controlled by the destination app, recipient or storage provider.</p>
+    <p>Advertising and notification service providers process their own service data under their privacy practices. See the <a href="../">Raqam Note privacy policy</a> for the services used and contact us for questions about associated data-deletion requests.</p>
+  </section>
+
+  <section class="card" id="urdu" lang="ur" dir="rtl" aria-labelledby="ur-title">
+    <h1 id="ur-title">اپنا <span>رقم نوٹ</span> اکاؤنٹ ڈیلیٹ کریں</h1>
+    <p class="updated">آخری اپ ڈیٹ: 13 اکتوبر 2026</p>
+    <p><span class="ltr">Waleed Inc</span> کی ایپ <span>رقم نوٹ</span> میں آپ اپنا اکاؤنٹ اور اس سے متعلق ایپ کے ریکارڈ مستقل طور پر ڈیلیٹ کرنے کی درخواست کر سکتے ہیں۔ <strong>اکاؤنٹ ڈیلیٹ کرنے کا عمل مکمل ہونے کے بعد اسے واپس نہیں کیا جا سکتا۔</strong></p>
+
+    <h2>ایپ کے اندر سے اکاؤنٹ ڈیلیٹ کریں</h2>
+    <ol>
+      <li><strong><span>رقم نوٹ</span></strong> کھولیں اور <strong>سیٹنگز</strong> میں جائیں۔</li>
+      <li><strong>اکاؤنٹ ڈیلیٹ کریں</strong> پر ٹیپ کریں اور ڈیلیٹ کرنے کی معلومات پڑھیں۔</li>
+      <li>آگے بڑھنے کی تصدیق کریں، پھر پوچھے جانے پر اپنے پاس ورڈ یا گوگل اکاؤنٹ سے اپنی شناخت کی تصدیق کریں۔</li>
+      <li>ایپ میں عمل مکمل ہونے کی تصدیق آنے تک انٹرنیٹ کنکشن برقرار رکھیں۔ اگر کوئی خرابی دکھائی دے تو ڈیلیٹ کرنے کا عمل نامکمل ہو سکتا ہے؛ پیغام کی ہدایت پر عمل کریں یا سپورٹ سے رابطہ کریں۔</li>
+    </ol>
+
+    <p>ڈیلیٹ کرنے کی بحالی والے ورژنز میں، عمل رکنے کے بعد ایپ دوبارہ کھولنے پر <strong>اکاؤنٹ ڈیلیٹ کرنے کا عمل نامکمل ہے</strong> دکھائی دے سکتا ہے۔ کچھ ریکارڈ پہلے ہی حذف ہو چکے ہو سکتے ہیں۔ اپنی شناخت کی تصدیق کریں اور باقی ڈیٹا ختم کرنے کے لیے <strong>اکاؤنٹ ڈیلیٹ کرنے کا عمل جاری رکھیں</strong> منتخب کریں۔ صرف ایپ دوبارہ کھولنے سے عمل خودبخود جاری نہیں ہوتا۔ اگر آپ آگے نہیں بڑھ سکتے تو نیچے دیے گئے ای میل پر درخواست بھیجیں۔ ڈیلیٹ کرنے کے دوران کسی دوسرے آلے سے نئے ریکارڈ شامل کرنے سے گریز کریں۔</p>
+
+    <h2>ایپ کے بغیر اکاؤنٹ ڈیلیٹ کرنے کی درخواست</h2>
+    <p><a class="ltr" href="mailto:waleediqbale678@gmail.com?subject=Raqam%20Note%20account%20deletion%20request">waleediqbale678@gmail.com</a> پر ای میل بھیجیں اور موضوع میں <strong class="ltr">Raqam Note account deletion request</strong> لکھیں۔</p>
+    <p>اگر ممکن ہو تو درخواست اپنے <span>رقم نوٹ</span> اکاؤنٹ سے منسلک ای میل سے بھیجیں۔ بتائیں کہ کون سا اکاؤنٹ ڈیلیٹ کرنا ہے اور یہ بھی لکھیں کہ آپ اکاؤنٹ اور اس سے متعلق ایپ کا ڈیٹا مستقل طور پر ڈیلیٹ کروانا چاہتے ہیں۔ درخواست پر عمل کرنے سے پہلے اکاؤنٹ کی ملکیت کی تصدیق ضروری ہو سکتی ہے۔ ای میل بھیجنے سے درخواست جمع ہوتی ہے؛ اکاؤنٹ فوراً ڈیلیٹ نہیں ہوتا۔</p>
+    <p><a class="action" href="mailto:waleediqbale678@gmail.com?subject=Raqam%20Note%20account%20deletion%20request&amp;body=Please%20permanently%20delete%20my%20Raqam%20Note%20account%20and%20associated%20app%20data.%0A%0AMy%20account%20email%20is%3A%20">ڈیلیٹ کرنے کی درخواست ای میل کریں</a></p>
+    <p>آپ <a href="https://play.google.com/store/apps/details?id=com.waleedinc.laindain">گوگل پلے پر <span>رقم نوٹ</span> کے آفیشل صفحے</a> سے بھی سپورٹ کا رابطہ دیکھ سکتے ہیں۔</p>
+
+    <h2>اکاؤنٹ کا کون سا ڈیٹا ڈیلیٹ ہوتا ہے؟</h2>
+    <p>اکاؤنٹ ڈیلیٹ کرنے کا عمل کامیابی سے مکمل ہونے پر درج ذیل ڈیٹا ختم ہوتا ہے:</p>
+    <ul>
+      <li>آپ کی <span>رقم نوٹ</span> پروفائل اور محفوظ ایپ سیٹنگز۔</li>
+      <li>ذاتی حساب کے ریکارڈ: قرض، ادھار اور متعلقہ ادائیگیاں۔</li>
+      <li>کاروباری فروخت، خریداری، ادائیگیوں کے ریکارڈ اور متعلقہ ادائیگیاں۔</li>
+      <li>ان ریکارڈز کے ساتھ محفوظ نام، اختیاری فون نمبر، تفصیل، قسم اور آخری تاریخیں۔</li>
+      <li>جہاں یہ خصوصیت دستیاب ہو، <strong>حال ہی میں ڈیلیٹ کیا گیا / بن</strong> کے ریکارڈ، ان میں شامل متعلقہ ادائیگیاں اور بن کے عمل کے عارضی ریکارڈ۔</li>
+      <li>متعلقہ <span class="ltr">Firebase Authentication</span> اکاؤنٹ۔</li>
+    </ul>
+
+    <h2>اکاؤنٹ ڈیلیٹ کرنا اور 30 دن کا بن الگ ہیں</h2>
+    <p>بن کی خصوصیت والے ایپ ورژنز میں کسی ایک ریکارڈ کو ڈیلیٹ کرنے پر وہ <strong>سیٹنگز میں حال ہی میں ڈیلیٹ کیا گیا</strong> حصے میں منتقل ہوتا ہے۔ آپ اسے 30 دن کے اندر بحال کر سکتے ہیں یا اس سے پہلے مستقل طور پر ڈیلیٹ کر سکتے ہیں۔ 30 دن کی بحالی کی مدت ختم ہونے کے بعد ریکارڈ بحال نہیں ہو سکتا۔ انٹرنیٹ سے منسلک ہو کر بن کھولنے پر مدت پوری کرنے والے ریکارڈ کلاؤڈ اسٹوریج سے حذف ہوتے ہیں؛ بن آن لائن نہ کھولنے کی صورت میں صفائی میں تاخیر ہو سکتی ہے۔</p>
+    <p><strong>مستقل طور پر اکاؤنٹ ڈیلیٹ کرنے سے اکاؤنٹ یا ریکارڈ بن میں منتقل نہیں ہوتے اور ان کے لیے 30 دن کی بحالی کی مدت نہیں ہوتی۔</strong></p>
+    <p class="warning">اکاؤنٹ ڈیلیٹ ہونے کا عمل مکمل ہونے کے بعد اکاؤنٹ اور ڈیلیٹ شدہ ایپ ریکارڈ <span>رقم نوٹ</span> کے ذریعے واپس حاصل نہیں کیے جا سکتے۔</p>
+
+    <p>حساب محفوظ کرنے کی بحالی والے ورژنز میں، غیر تصدیق شدہ حساب کی مقامی کاپیاں جائزے کے لیے رکھی جاتی ہیں۔ ایپ کے اندر اکاؤنٹ ڈیلیٹ ہونے کا عمل کامیابی سے مکمل ہونے پر اسی آلے سے اکاؤنٹ کی بحالی کی کاپیاں اور نامکمل عمل کی نشانی ہٹا دی جاتی ہیں۔ دوسرے آلات کا مقامی ڈیٹا دور سے صاف نہیں کیا جاتا؛ مقامی کاپیاں ہٹانے کے لیے ان آلات پر ایپ کی اسٹوریج صاف کریں یا ایپ ہٹا دیں۔</p>
+
+    <h2>آلے کا ڈیٹا، شیئر شدہ کاپیاں اور دیگر خدمات</h2>
+    <p>جس آلے پر ایپ کے اندر اکاؤنٹ ڈیلیٹ کرنے کا عمل مکمل ہوتا ہے، اس پر مقرر کردہ <span>رقم نوٹ</span> یاد دہانیاں منسوخ ہو جاتی ہیں۔ عارضی محفوظ ڈیٹا اور تیار کردہ پی ڈی ایف آلے پر اس وقت تک رہ سکتی ہیں جب تک ایپ کی مقامی اسٹوریج صاف نہ ہو، ایپ ہٹا نہ دی جائے یا آپریٹنگ سسٹم کیش صاف نہ کرے۔</p>
+    <p>اکاؤنٹ ڈیلیٹ کرنے سے ایپ سے باہر محفوظ پی ڈی ایف، دوسروں کو شیئر کی گئی کاپیاں یا واٹس ایپ اور ایس ایم ایس کے ذریعے پہلے سے بھیجے گئے پیغامات ختم نہیں ہوتے۔ ان کی اسٹوریج متعلقہ ایپ، وصول کنندہ یا اسٹوریج فراہم کرنے والے کے اختیار میں ہوتی ہے۔</p>
+    <p>اشتہارات اور اطلاعات فراہم کرنے والی خدمات اپنا متعلقہ ڈیٹا اپنی رازداری کی پالیسی کے مطابق استعمال کرتی ہیں۔ استعمال ہونے والی خدمات کے لیے <a href="../#urdu"><span>رقم نوٹ</span> کی رازداری کی پالیسی</a> دیکھیں اور متعلقہ ڈیٹا ڈیلیٹ کرنے کی درخواست کے بارے میں سوالات کے لیے ہم سے رابطہ کریں۔</p>
+  </section>
+  <footer>© 2026 Raqam Note · Waleed Inc</footer>
 </main>
 </body>
 </html>
