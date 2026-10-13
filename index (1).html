@@ -1,353 +1,180 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Lain Dain - Privacy Policy</title>
-
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Raqam Note Privacy Policy | رازداری کی پالیسی</title>
   <style>
-    body {
-      font-family: Arial, Helvetica, sans-serif;
-      line-height: 1.7;
-      margin: 0;
-      background: #0f141a;
-      color: #e8edf2;
-    }
-
-    .container {
-      max-width: 900px;
-      margin: 0 auto;
-      padding: 40px 20px 60px;
-    }
-
-    h1, h2 {
-      color: #ffffff;
-    }
-
-    h1 {
-      font-size: 2.2rem;
-      margin-bottom: 8px;
-    }
-
-    h2 {
-      margin-top: 32px;
-      font-size: 1.35rem;
-    }
-
-    p, li {
-      color: #c7d0d9;
-    }
-
-    ul {
-      padding-left: 22px;
-    }
-
-    a {
-      color: #28c7b7;
-      word-break: break-word;
-    }
-
-    .updated {
-      color: #8fa1b3;
-      margin-bottom: 28px;
-    }
-
-    .card {
-      background: #171f27;
-      border: 1px solid #24313d;
-      border-radius: 16px;
-      padding: 24px;
-    }
-
-    .footer {
-      margin-top: 40px;
-      font-size: 0.9rem;
-      color: #8fa1b3;
-    }
+    :root { color-scheme:dark; --bg:#0f141a; --card:#171f27; --text:#e8edf2; --muted:#c7d0d9; --teal:#5eead4; --border:#24313d; }
+    * { box-sizing:border-box; }
+    body { font-family:Arial,Helvetica,sans-serif; line-height:1.75; margin:0; background:var(--bg); color:var(--text); }
+    main { max-width:900px; margin:0 auto; padding:32px 20px 60px; }
+    .card { background:var(--card); border:1px solid var(--border); border-radius:16px; padding:clamp(20px,4vw,32px); margin:20px 0; }
+    h1,h2 { color:#fff; line-height:1.4; } h1{font-size:clamp(1.8rem,5vw,2.2rem);margin-top:0} h2{margin-top:30px;font-size:1.25rem}
+    p,li { color:var(--muted); } strong { color:var(--text); } ul { padding-inline-start:24px; } li{margin-block:6px}
+    a { color:var(--teal); overflow-wrap:anywhere; text-underline-offset:4px; } a:focus-visible{outline:3px solid var(--teal);outline-offset:5px}
+    nav { display:flex; flex-wrap:wrap; gap:12px; } nav a{border:1px solid var(--border);border-radius:10px;padding:10px 16px}
+    .updated,footer { font-size:.9rem; color:#b6c3d4; } section{scroll-margin-top:20px}
+    [lang="ur"] { font-family:"Noto Nastaliq Urdu","Urdu Typesetting","Segoe UI",serif; line-height:2.1; } [lang="ur"] h1,[lang="ur"] h2{line-height:1.8}
+    .ltr { direction:ltr; unicode-bidi:isolate; display:inline-block; }
+    @media print {body{background:white;color:#111}.card{background:white;border-color:#ccc}p,li,strong,h1,h2,footer,.updated{color:#111}a{color:#075e56}}
   </style>
 </head>
-
 <body>
-  <div class="container">
+<main>
+  <nav aria-label="Page languages">
+    <a href="#english" lang="en">English</a>
+    <a href="#urdu" lang="ur" dir="rtl">اردو</a>
+    <a href="delete-account/">Account deletion / اکاؤنٹ ڈیلیٹ کریں</a>
+  </nav>
+  <section class="card" id="english" lang="en" aria-labelledby="en-title">
+    <h1 id="en-title">Raqam Note Privacy Policy</h1>
+    <p class="updated">Last updated: 13 October 2026</p>
+    <p>Raqam Note, by Waleed Inc, helps users track personal debts, lending, payments, business receivables and payables, due dates and related financial records. This policy describes information used by the app and its service providers.</p>
+    <p>Features such as Recently Deleted / Bin and PDF statements are available in app versions that include them. Updating this policy does not add those features to an older installed version.</p>
 
-    <div class="card">
+    <h2>1. Information you provide</h2>
+    <p>We may collect and store:</p>
+    <ul>
+      <li>Your email address and account identifier.</li>
+      <li>App preferences, such as language, personal/business mode and default currency.</li>
+      <li>Names of people, customers, suppliers or other parties you enter.</li>
+      <li>Record amounts, currencies, dates, payment history, notes, categories and due dates.</li>
+      <li>Optional phone numbers you enter or select for payment reminders.</li>
+      <li>In versions with the Bin, copies of deleted records and linked payments, deletion/expiry dates and temporary operation information needed for safe restoration.</li>
+    </ul>
+    <p>These details support app functionality and synchronization across supported devices.</p>
 
-      <h1>Lain Dain Privacy Policy</h1>
+    <h2>2. Accounts and authentication</h2>
+    <p>Raqam Note uses Google Firebase Authentication for account creation, email/password sign-in, verification, password reset and Google sign-in. Authentication information is processed by Firebase and Google services.</p>
 
-      <p class="updated">
-        Last updated: October 2026
-      </p>
+    <h2>3. Cloud storage and local cache</h2>
+    <p>Profiles, preferences, personal and business records, saved reminder phone numbers, and Bin records are stored in Google Firebase Firestore. Records are associated with your account. Firestore access rules are intended to restrict access to the account owner.</p>
+    <p>The app may keep local cached records so previously loaded information can be available when offline and changes can be synchronized. The latest server state may not be available until the device reconnects. Local caches may remain until app storage is cleared, the app is removed, or the operating system clears them.</p>
 
-      <p>
-        Lain Dain is a personal and business record-keeping application designed
-        to help users track money they owe, money owed to them, business
-        receivables, business payables, due dates, payments, and related records.
-      </p>
+    <p>In versions with save recovery, the app also stores local copies of newly submitted financial records or preference changes until their server save is confirmed, or until you discard the recovery copy. These copies can include names, amounts, notes and preferences, and may remain after an app restart so you can review an unconfirmed save. Discarding a recovery copy does not delete a confirmed cloud record. The recovery copy itself is not automatically submitted as a new record.</p>
+    <p>If you explicitly request account deletion, the app may keep a local unfinished-deletion marker so it can show recovery instructions when reopened. This marker does not automatically restart deletion. Successfully completed in-app deletion clears that account's save-recovery copies and the marker on the device where it completes. Clearing app storage or uninstalling removes these local recovery items.</p>
 
-      <h2>1. Information We Collect</h2>
+    <h2>4. WhatsApp and SMS payment reminders</h2>
+    <p>You can prepare a payment reminder using a phone number you enter or select. The number may be saved with the associated record in Firestore for reuse. The message can include a person's name, remaining amount, currency, due date and Raqam Note branding or link.</p>
+    <p>Raqam Note opens the selected messaging app with the prepared reminder. It does not automatically send the message; you decide whether to send it. The selected app and recipient then handle the information under their own practices.</p>
+    <p>The Android contact picker supplies only the contact information you explicitly select. Raqam Note does not request unrestricted access to your entire contact list.</p>
 
-      <p>
-        When you use Lain Dain, we may collect and store information that you
-        provide directly, including:
-      </p>
+    <h2>5. PDF statements and sharing</h2>
+    <p>In versions with this feature, you can select a person or party, currency and date range to generate a PDF statement. The statement may contain that party's name, financial records, dates, notes, totals and balances, with small Raqam Note branding and an app link.</p>
+    <p>PDF generation occurs on the device using records available to the app. Generated PDFs may be kept temporarily in the app cache. Saving a PDF places a copy in the storage location you select. Sharing sends it to the app or recipient you choose, such as WhatsApp; sharing is not automatic.</p>
+    <p>Deleting an account or record does not remove PDFs already saved outside the app or copies shared with others. Those copies are controlled by their destination or recipient.</p>
 
-      <ul>
-        <li>Your email address and account identifier.</li>
-        <li>Your selected app preferences, such as usage mode and default currency.</li>
-        <li>Names of people, customers, suppliers, or other parties that you enter.</li>
-        <li>
-          Transaction and business record information, including amounts,
-          currencies, payment history, notes, categories, and due dates.
-        </li>
-        <li>
-          Optional phone numbers that you enter or select when using the payment
-          reminder feature.
-        </li>
-      </ul>
+    <h2>6. Notifications</h2>
+    <p>Local Android notifications remind you about due payments. You can control notification permissions in Android settings.</p>
+    <p>OneSignal supports push notifications and may process device identifiers, IP address, device information, notification subscription information and app-interaction information. Raqam Note associates its account identifier with OneSignal to support account-related notifications. See the <a href="https://onesignal.com/privacy_policy/" target="_blank" rel="noopener noreferrer">OneSignal Privacy Policy</a>.</p>
 
-      <p>
-        This information is used to provide Lain Dain's core functionality and
-        to synchronize your records across supported devices.
-      </p>
+    <h2>7. Advertising and consent</h2>
+    <p>Raqam Note displays banner ads through Google AdMob. The Google Mobile Ads SDK may process IP address, approximate location inferred from IP address, app interactions, diagnostics, advertising identifiers and other device/account identifiers for advertising, analytics, fraud prevention and related purposes.</p>
+    <p>Where required, Google's User Messaging Platform presents advertising privacy and consent choices. You can use the app's available Ad Privacy Choices option to manage those choices. See <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google's Privacy Policy</a>.</p>
 
-      <h2>2. Account Information and Authentication</h2>
+    <h2>8. Data sharing</h2>
+    <p>Raqam Note does not sell users' personal financial records. Service providers process information necessary for their functions: Google Firebase for authentication/database services, Google AdMob for ads, and OneSignal for push notifications.</p>
+    <p>When you choose to send a reminder, save a PDF or share a statement, the selected messaging app, storage provider or recipient receives the information involved. Advertising and notification services process their service data according to their own privacy practices.</p>
 
-      <p>
-        Lain Dain uses Firebase Authentication to provide account creation,
-        email/password sign-in, email verification, password reset, and Google Sign-In.
-      </p>
+    <h2>9. Data security</h2>
+    <p>Raqam Note uses authentication and Firestore access controls intended to protect each user's own records. Supported cloud services provide encrypted network connections. No internet-based system can guarantee absolute security.</p>
 
-      <p>
-        Authentication information is processed through Firebase services
-        operated by Google.
-      </p>
+    <h2>10. Retention, Bin and account deletion</h2>
+    <p>Active account records are retained until you delete them or the account-deletion process completes.</p>
+    <p>In versions with the Bin, deleting an individual record moves it and applicable linked payments to <strong>Settings → Recently Deleted</strong>. You can restore them within 30 days or permanently delete them earlier. After the 30-day recovery period expires, restoration is unavailable. Expired Bin records are removed from cloud storage when the Bin is opened online. If it is not opened with an internet connection, server cleanup may be delayed.</p>
+    <p><strong>Permanent account deletion has no 30-day Bin recovery period.</strong> When it successfully completes, it removes the profile/preferences, personal records, business records, associated names/phone numbers/notes/due dates, Bin archives and operation records where present, and the Firebase Authentication account.</p>
+    <p>Deletion requires an internet connection and identity confirmation. If the app reports a failure, deletion may be incomplete. Local caches and generated PDFs may remain on devices until local storage is cleared or the app/operating system removes them. Scheduled reminders are cancelled on the device where in-app deletion completes.</p>
+    <p>Account deletion does not recall messages already sent or PDFs saved/shared outside the app. Service providers handle their own service information under their policies; contact us for questions about associated data-deletion requests.</p>
+    <p>You can request account deletion without access to the app. Instructions and the request email are on the <a href="delete-account/">account-deletion page</a>.</p>
 
-      <h2>3. Cloud Storage</h2>
+    <h2>11. Children's privacy</h2>
+    <p>Raqam Note is not specifically designed for children. Users should only provide information they are legally permitted to store and manage.</p>
 
-      <p>
-        Lain Dain stores user records using Google Firebase Firestore.
-      </p>
+    <h2>12. Third-party services</h2>
+    <p>The app relies on Google Firebase, Google AdMob, Google Play services and OneSignal. They process information under their own terms and privacy policies. Relevant links: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google</a>, <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener noreferrer">Firebase</a>, and <a href="https://onesignal.com/privacy_policy/" target="_blank" rel="noopener noreferrer">OneSignal</a>.</p>
 
-      <p>This may include:</p>
+    <h2>13. Policy changes</h2>
+    <p>We may update this policy when app features or data practices change. The latest published version is available at <a href="https://waleed123e.github.io/LainDain-Privacy/">Latest privacy policy</a>.</p>
 
-      <ul>
-        <li>Account preferences.</li>
-        <li>Personal transactions.</li>
-        <li>Business entries.</li>
-        <li>Names associated with transactions or business records.</li>
-        <li>Notes and due dates.</li>
-        <li>Optional phone numbers saved for payment reminders.</li>
-      </ul>
+    <h2>14. Contact</h2>
+    <p>For privacy questions or requests, email <a href="mailto:waleediqbale678@gmail.com">waleediqbale678@gmail.com</a>. This is the support address on the <a href="https://play.google.com/store/apps/details?id=com.waleedinc.laindain">official Raqam Note Google Play listing</a>.</p>
+  </section>
 
-      <p>
-        Records are associated with the authenticated user's account and are
-        protected using Firestore security rules intended to restrict users
-        to their own data.
-      </p>
+  <section class="card" id="urdu" lang="ur" dir="rtl" aria-labelledby="ur-title">
+    <h1 id="ur-title"><span>رقم نوٹ</span> کی رازداری کی پالیسی</h1>
+    <p class="updated">آخری اپ ڈیٹ: 13 اکتوبر 2026</p>
+    <p><span class="ltr">Waleed Inc</span> کی ایپ <span>رقم نوٹ</span> ذاتی قرض، ادھار، ادائیگیوں، کاروباری قابلِ وصول اور قابلِ ادائیگی رقوم، آخری تاریخوں اور متعلقہ مالی حساب کا ریکارڈ رکھنے میں مدد دیتی ہے۔ یہ پالیسی ایپ اور اس کی خدمات فراہم کرنے والوں کے استعمال کردہ معلومات کی وضاحت کرتی ہے۔</p>
+    <p>حال ہی میں ڈیلیٹ کیا گیا / بن اور پی ڈی ایف اسٹیٹمنٹ جیسی خصوصیات ان ایپ ورژنز میں دستیاب ہیں جن میں انہیں شامل کیا گیا ہے۔ پالیسی اپ ڈیٹ ہونے سے پہلے سے نصب پرانے ورژن میں یہ خصوصیات شامل نہیں ہوتیں۔</p>
 
-      <h2>4. Payment Reminder Feature</h2>
+    <h2>1. آپ کی فراہم کردہ معلومات</h2>
+    <p>ہم درج ذیل معلومات حاصل اور محفوظ کر سکتے ہیں:</p>
+    <ul>
+      <li>آپ کا ای میل ایڈریس اور اکاؤنٹ کی شناخت۔</li>
+      <li>ایپ سیٹنگز، مثلاً زبان، ذاتی یا کاروباری استعمال اور بنیادی کرنسی۔</li>
+      <li>آپ کے درج کردہ افراد، گاہکوں، سپلائرز یا دوسرے فریقین کے نام۔</li>
+      <li>حساب کی رقوم، کرنسیاں، تاریخیں، ادائیگیوں کا ریکارڈ، تفصیل، اقسام اور آخری تاریخیں۔</li>
+      <li>ادائیگی کی یاد دہانی کے لیے آپ کے درج یا منتخب کردہ اختیاری فون نمبر۔</li>
+      <li>بن والے ورژنز میں ڈیلیٹ شدہ ریکارڈ اور متعلقہ ادائیگیوں کی کاپیاں، ڈیلیٹ ہونے اور مدت ختم ہونے کی تاریخیں، اور محفوظ بحالی کے لیے ضروری عارضی معلومات۔</li>
+    </ul>
+    <p>یہ معلومات ایپ کی سہولیات فراہم کرنے اور دستیاب آلات پر ریکارڈ ہم آہنگ رکھنے کے لیے استعمال ہوتی ہیں۔</p>
 
-      <p>
-        Lain Dain allows users to prepare payment reminders through WhatsApp or SMS.
-      </p>
+    <h2>2. اکاؤنٹ اور شناخت کی تصدیق</h2>
+    <p><span>رقم نوٹ</span> اکاؤنٹ بنانے، ای میل اور پاس ورڈ سے لاگ اِن، ای میل کی تصدیق، پاس ورڈ تبدیل کرنے اور گوگل سے لاگ اِن کے لیے <span class="ltr">Google Firebase Authentication</span> استعمال کرتی ہے۔ شناخت کی تصدیق سے متعلق معلومات گوگل اور فائر بیس کی خدمات کے ذریعے استعمال ہوتی ہیں۔</p>
 
-      <p>
-        When a user chooses or enters a phone number for a payment reminder,
-        that phone number may be saved with the associated transaction or
-        business record in Firebase Firestore so it can be reused for future reminders.
-      </p>
+    <h2>3. کلاؤڈ اسٹوریج اور مقامی کیش</h2>
+    <p>پروفائل، سیٹنگز، ذاتی اور کاروباری حساب، یاد دہانی کے محفوظ فون نمبر اور بن کے ریکارڈ <span class="ltr">Google Firebase Firestore</span> میں محفوظ ہوتے ہیں۔ ریکارڈ آپ کے اکاؤنٹ سے منسلک ہوتے ہیں۔ فائر اسٹور کے رسائی کے قواعد کا مقصد رسائی کو اکاؤنٹ کے مالک تک محدود رکھنا ہے۔</p>
+    <p>ایپ آلے پر ریکارڈ کی عارضی کاپیاں رکھ سکتی ہے تاکہ پہلے سے لوڈ شدہ معلومات آف لائن دستیاب ہوں اور تبدیلیاں بعد میں ہم آہنگ ہو سکیں۔ آلہ دوبارہ آن لائن آنے تک سرور کی تازہ حالت دستیاب نہ ہو سکتی ہے۔ مقامی کیش اس وقت تک رہ سکتا ہے جب تک ایپ کی اسٹوریج صاف نہ ہو، ایپ ہٹا نہ دی جائے یا آپریٹنگ سسٹم اسے صاف نہ کرے۔</p>
 
-      <p>
-        Lain Dain does not automatically send messages on the user's behalf.
-        The user reviews and sends the message through the selected WhatsApp
-        or SMS application.
-      </p>
+    <p>حساب محفوظ کرنے کی بحالی والے ورژنز میں، ایپ نئے جمع کیے گئے مالی حساب یا سیٹنگز کی مقامی کاپیاں بھی رکھتی ہے، جب تک سرور پر محفوظ ہونے کی تصدیق نہ ہو یا آپ بحالی کی کاپی ہٹا نہ دیں۔ ان کاپیوں میں نام، رقوم، تفصیل اور سیٹنگز شامل ہو سکتی ہیں۔ ایپ دوبارہ کھولنے کے بعد بھی یہ کاپیاں رہ سکتی ہیں تاکہ آپ غیر تصدیق شدہ حساب کا جائزہ لے سکیں۔ بحالی کی کاپی ہٹانے سے سرور پر پہلے سے محفوظ حساب حذف نہیں ہوتا۔ بحالی کی کاپی خودبخود نیا حساب بنا کر جمع نہیں کی جاتی۔</p>
+    <p>اگر آپ واضح طور پر اکاؤنٹ ڈیلیٹ کرنے کی درخواست کریں تو ایپ نامکمل عمل کی مقامی نشانی رکھ سکتی ہے، تاکہ دوبارہ کھولنے پر بحالی کی ہدایات دکھائی جا سکیں۔ اس نشانی سے ڈیلیٹ کرنے کا عمل خودبخود دوبارہ شروع نہیں ہوتا۔ ایپ کے اندر اکاؤنٹ ڈیلیٹ ہونے کا عمل کامیابی سے مکمل ہونے پر، اسی آلے سے اس اکاؤنٹ کی بحالی کی کاپیاں اور نشانی ہٹا دی جاتی ہیں۔ ایپ کی اسٹوریج صاف کرنے یا ایپ ہٹانے سے یہ مقامی معلومات بھی ختم ہو جاتی ہیں۔</p>
 
-      <p>
-        When a phone number is selected using the Android contact picker,
-        Lain Dain only receives the contact information explicitly selected
-        by the user. The app does not request unrestricted access to the
-        user's entire contact list.
-      </p>
+    <h2>4. واٹس ایپ اور ایس ایم ایس کی یاد دہانیاں</h2>
+    <p>آپ درج یا منتخب کردہ فون نمبر کے لیے ادائیگی کی یاد دہانی تیار کر سکتے ہیں۔ دوبارہ استعمال کے لیے یہ نمبر متعلقہ ریکارڈ کے ساتھ فائر اسٹور میں محفوظ ہو سکتا ہے۔ پیغام میں شخص کا نام، بقایا رقم، کرنسی، آخری تاریخ اور <span>رقم نوٹ</span> کا نام یا لنک شامل ہو سکتا ہے۔</p>
+    <p><span>رقم نوٹ</span> تیار کردہ یاد دہانی کے ساتھ منتخب پیغام رسانی کی ایپ کھولتی ہے۔ پیغام خود بخود نہیں بھیجا جاتا؛ اسے بھیجنے کا فیصلہ آپ کرتے ہیں۔ اس کے بعد منتخب ایپ اور وصول کنندہ معلومات کو اپنے طریقہ کار کے مطابق سنبھالتے ہیں۔</p>
+    <p>اینڈرائیڈ کا رابطہ منتخب کرنے والا اختیار صرف آپ کا منتخب کردہ رابطہ فراہم کرتا ہے۔ <span>رقم نوٹ</span> آپ کی پوری رابطہ فہرست تک غیر محدود رسائی نہیں مانگتی۔</p>
 
-      <h2>5. Notifications</h2>
+    <h2>5. پی ڈی ایف اسٹیٹمنٹ اور شیئر کرنا</h2>
+    <p>اس خصوصیت والے ورژنز میں آپ شخص یا فریق، کرنسی اور تاریخوں کی مدت منتخب کرکے پی ڈی ایف اسٹیٹمنٹ بنا سکتے ہیں۔ اس میں فریق کا نام، مالی حساب، تاریخیں، تفصیل، مجموعی رقوم اور بیلنس، نیز <span>رقم نوٹ</span> کا چھوٹا نام اور ایپ کا لنک شامل ہو سکتے ہیں۔</p>
+    <p>پی ڈی ایف آلے پر ایپ کو دستیاب ریکارڈ سے تیار ہوتی ہے اور عارضی طور پر ایپ کے کیش میں رہ سکتی ہے۔ محفوظ کرنے پر کاپی آپ کی منتخب اسٹوریج میں جاتی ہے۔ شیئر کرنے پر وہ آپ کی منتخب ایپ، مثلاً واٹس ایپ، یا وصول کنندہ کو جاتی ہے؛ شیئرنگ خود بخود نہیں ہوتی۔</p>
+    <p>اکاؤنٹ یا ریکارڈ ڈیلیٹ کرنے سے ایپ سے باہر محفوظ پی ڈی ایف یا دوسروں کو شیئر کی گئی کاپیاں ختم نہیں ہوتیں۔ یہ کاپیاں متعلقہ جگہ یا وصول کنندہ کے اختیار میں ہوتی ہیں۔</p>
 
-      <p>
-        Lain Dain uses local Android notifications to remind users about due payments.
-      </p>
+    <h2>6. اطلاعات اور یاد دہانیاں</h2>
+    <p>اینڈرائیڈ کی مقامی اطلاعات واجب الادا ادائیگیوں کی یاد دہانی دیتی ہیں۔ آپ اینڈرائیڈ سیٹنگز میں اطلاعات کی اجازت کنٹرول کر سکتے ہیں۔</p>
+    <p>پش اطلاعات کے لیے <span class="ltr">OneSignal</span> استعمال ہوتا ہے۔ یہ آلے کی شناخت، آئی پی ایڈریس، آلے کی معلومات، اطلاعات کی سبسکرپشن اور ایپ کے استعمال سے متعلق معلومات استعمال کر سکتا ہے۔ اکاؤنٹ سے متعلق اطلاعات کے لیے <span>رقم نوٹ</span> اپنے اکاؤنٹ کی شناخت کو <span class="ltr">OneSignal</span> سے منسلک کرتی ہے۔ <a href="https://onesignal.com/privacy_policy/" target="_blank" rel="noopener noreferrer"><span class="ltr">OneSignal</span> کی رازداری کی پالیسی</a> دیکھیں۔</p>
 
-      <p>
-        Lain Dain also uses OneSignal for push-notification functionality.
-        OneSignal may process information such as device identifiers, IP address,
-        device information, notification subscription information, and app
-        interaction information in order to provide push-notification services.
-      </p>
+    <h2>7. اشتہارات اور رضامندی</h2>
+    <p><span>رقم نوٹ</span> گوگل ایڈموب کے ذریعے بینر اشتہارات دکھاتی ہے۔ گوگل کے اشتہاری سافٹ ویئر کے ذریعے آئی پی ایڈریس، اس سے اخذ کردہ اندازاً مقام، ایپ کا استعمال، خرابیوں کی تشخیصی معلومات، اشتہاری شناخت اور آلے یا اکاؤنٹ کی دیگر شناختیں اشتہارات، تجزیے، دھوکا دہی سے بچاؤ اور متعلقہ مقاصد کے لیے استعمال ہو سکتی ہیں۔</p>
+    <p>جہاں ضروری ہو، گوگل کی <span class="ltr">User Messaging Platform</span> اشتہاری رازداری اور رضامندی کے اختیارات دکھاتی ہے۔ ان کا انتظام کرنے کے لیے ایپ میں دستیاب اشتہارات کی رازداری کے اختیارات استعمال کریں۔ <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">گوگل کی رازداری کی پالیسی</a> دیکھیں۔</p>
 
-      <p>
-        For more information, see the
-        <a href="https://onesignal.com/privacy_policy/" target="_blank" rel="noopener noreferrer">
-          OneSignal Privacy Policy
-        </a>.
-      </p>
+    <h2>8. معلومات کا اشتراک</h2>
+    <p><span>رقم نوٹ</span> صارفین کے ذاتی مالی ریکارڈ فروخت نہیں کرتی۔ ضروری خدمات کے لیے گوگل فائر بیس اکاؤنٹ کی تصدیق اور ڈیٹابیس، گوگل ایڈموب اشتہارات، اور <span class="ltr">OneSignal</span> پش اطلاعات کے لیے معلومات استعمال کرتے ہیں۔</p>
+    <p>جب آپ یاد دہانی بھیجنے، پی ڈی ایف محفوظ کرنے یا اسٹیٹمنٹ شیئر کرنے کا انتخاب کرتے ہیں تو متعلقہ معلومات منتخب پیغام رسانی کی ایپ، اسٹوریج فراہم کرنے والے یا وصول کنندہ کو ملتی ہیں۔ اشتہارات اور اطلاعات کی خدمات اپنے متعلقہ ڈیٹا کو اپنی رازداری کی پالیسی کے مطابق استعمال کرتی ہیں۔</p>
 
-      <h2>6. Advertising</h2>
+    <h2>9. ڈیٹا کی حفاظت</h2>
+    <p><span>رقم نوٹ</span> ہر صارف کے اپنے ریکارڈ کی حفاظت کے لیے شناخت کی تصدیق اور فائر اسٹور کے رسائی کے قواعد استعمال کرتی ہے۔ معاون کلاؤڈ خدمات معلومات منتقل کرنے کے لیے خفیہ کردہ نیٹ ورک کنکشن فراہم کرتی ہیں۔ انٹرنیٹ پر کوئی نظام مکمل حفاظت کی ضمانت نہیں دے سکتا۔</p>
 
-      <p>
-        Lain Dain displays banner advertisements using Google AdMob.
-      </p>
+    <h2>10. ڈیٹا رکھنا، بن اور اکاؤنٹ ڈیلیٹ کرنا</h2>
+    <p>فعال اکاؤنٹ کے ریکارڈ اس وقت تک محفوظ رہتے ہیں جب تک آپ انہیں ڈیلیٹ نہ کریں یا اکاؤنٹ ڈیلیٹ کرنے کا عمل مکمل نہ ہو۔</p>
+    <p>بن والے ورژنز میں کسی ریکارڈ کو ڈیلیٹ کرنے پر وہ اور اس کی متعلقہ ادائیگیاں <strong>سیٹنگز میں حال ہی میں ڈیلیٹ کیا گیا</strong> حصے میں منتقل ہوتے ہیں۔ آپ انہیں 30 دن کے اندر بحال کر سکتے ہیں یا اس سے پہلے مستقل طور پر ڈیلیٹ کر سکتے ہیں۔ 30 دن کی بحالی کی مدت ختم ہونے پر بحالی دستیاب نہیں رہتی۔ آن لائن بن کھولنے پر مدت پوری کرنے والے ریکارڈ کلاؤڈ اسٹوریج سے حذف ہوتے ہیں۔ انٹرنیٹ سے منسلک ہو کر بن نہ کھولنے کی صورت میں سرور کی صفائی میں تاخیر ہو سکتی ہے۔</p>
+    <p><strong>مستقل طور پر اکاؤنٹ ڈیلیٹ کرنے کے لیے بن کی 30 دن کی بحالی کی مدت نہیں ہوتی۔</strong> یہ عمل کامیابی سے مکمل ہونے پر پروفائل اور سیٹنگز، ذاتی اور کاروباری حساب، متعلقہ نام، فون نمبر، تفصیل اور آخری تاریخیں، موجود بن کے ریکارڈ اور عارضی عمل کے ریکارڈ، نیز <span class="ltr">Firebase Authentication</span> اکاؤنٹ ختم کرتا ہے۔</p>
+    <p>ڈیلیٹ کرنے کے لیے انٹرنیٹ کنکشن اور شناخت کی تصدیق ضروری ہے۔ خرابی دکھائی دینے پر عمل نامکمل ہو سکتا ہے۔ مقامی کیش اور تیار کردہ پی ڈی ایف آلے پر مقامی اسٹوریج صاف ہونے یا ایپ / آپریٹنگ سسٹم کے انہیں ہٹانے تک رہ سکتی ہیں۔ جس آلے پر ایپ کے اندر اکاؤنٹ ڈیلیٹ کرنے کا عمل مکمل ہوتا ہے، اس پر مقرر کردہ یاد دہانیاں منسوخ ہو جاتی ہیں۔</p>
+    <p>اکاؤنٹ ڈیلیٹ کرنے سے پہلے سے بھیجے گئے پیغامات یا ایپ سے باہر محفوظ اور شیئر شدہ پی ڈی ایف واپس نہیں لی جاتیں۔ خدمات فراہم کرنے والے اپنی معلومات اپنی پالیسیوں کے تحت سنبھالتے ہیں؛ متعلقہ ڈیٹا ڈیلیٹ کرنے کی درخواست کے سوالات کے لیے ہم سے رابطہ کریں۔</p>
+    <p>ایپ تک رسائی کے بغیر بھی اکاؤنٹ ڈیلیٹ کرنے کی درخواست کی جا سکتی ہے۔ ہدایات اور درخواست کا ای میل <a href="delete-account/#urdu">اکاؤنٹ ڈیلیٹ کرنے کے صفحے</a> پر موجود ہیں۔</p>
 
-      <p>
-        The Google Mobile Ads SDK may process information including:
-      </p>
+    <h2>11. بچوں کی رازداری</h2>
+    <p><span>رقم نوٹ</span> خاص طور پر بچوں کے لیے تیار نہیں کی گئی۔ صارفین صرف وہ معلومات فراہم کریں جنہیں محفوظ اور منظم کرنے کی انہیں قانونی اجازت ہو۔</p>
 
-      <ul>
-        <li>IP address.</li>
-        <li>Approximate location inferred from IP address.</li>
-        <li>App interactions.</li>
-        <li>Diagnostic information.</li>
-        <li>Advertising identifiers and other device or account identifiers.</li>
-      </ul>
+    <h2>12. دیگر اداروں کی خدمات</h2>
+    <p>ایپ گوگل فائر بیس، گوگل ایڈموب، گوگل پلے سروسز اور <span class="ltr">OneSignal</span> استعمال کرتی ہے۔ یہ ادارے معلومات اپنی شرائط اور رازداری کی پالیسیوں کے مطابق استعمال کرتے ہیں۔ متعلقہ لنکس: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">گوگل</a>، <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener noreferrer">فائر بیس</a> اور <a href="https://onesignal.com/privacy_policy/" target="_blank" rel="noopener noreferrer"><span class="ltr">OneSignal</span></a>۔</p>
 
-      <p>
-        This information may be used for advertising, analytics, fraud prevention,
-        and related purposes.
-      </p>
+    <h2>13. پالیسی میں تبدیلیاں</h2>
+    <p>ایپ کی خصوصیات یا ڈیٹا کے استعمال میں تبدیلی آنے پر یہ پالیسی اپ ڈیٹ ہو سکتی ہے۔ تازہ شائع شدہ ورژن <a href="https://waleed123e.github.io/LainDain-Privacy/">رازداری کی تازہ پالیسی</a> پر دستیاب ہے۔</p>
 
-      <p>
-        Where required, Lain Dain uses Google's User Messaging Platform to
-        provide advertising privacy and consent choices.
-      </p>
-
-      <h2>7. Data Sharing</h2>
-
-      <p>
-        Lain Dain does not sell users' personal financial records.
-      </p>
-
-      <p>
-        Information may be processed by service providers necessary for the app
-        to operate, including:
-      </p>
-
-      <ul>
-        <li>Google Firebase for authentication and cloud database services.</li>
-        <li>Google AdMob for advertising.</li>
-        <li>OneSignal for push notifications.</li>
-      </ul>
-
-      <p>
-        Advertising and notification services may collect or process certain
-        device, interaction, diagnostic, advertising, and notification-related
-        information according to their own privacy practices.
-      </p>
-
-      <h2>8. Data Security</h2>
-
-      <p>
-        Lain Dain uses authentication and Firestore access controls intended to
-        restrict access to each user's own records.
-      </p>
-
-      <p>
-        Data transmitted between the app and supported cloud services is sent
-        using encrypted network connections provided by those services.
-      </p>
-
-      <p>
-        No internet-based system can guarantee absolute security.
-      </p>
-
-      <h2>9. Data Retention and Deletion</h2>
-
-      <p>
-        User records remain associated with the user's account until they are
-        deleted by the user or the account is deleted.
-      </p>
-
-      <p>
-        Lain Dain provides an in-app account deletion feature.
-      </p>
-
-      <p>
-        When account deletion completes, Lain Dain attempts to delete:
-      </p>
-
-      <ul>
-        <li>Personal transactions.</li>
-        <li>Business entries.</li>
-        <li>User profile information.</li>
-        <li>The associated Firebase Authentication account.</li>
-      </ul>
-
-      <p>
-        Users may also view account deletion information at:
-      </p>
-
-      <p>
-        <a
-          href="https://waleed123e.github.io/LainDain-Privacy/delete-account/"
-          target="_blank"
-          rel="noopener noreferrer">
-          https://waleed123e.github.io/LainDain-Privacy/delete-account/
-        </a>
-      </p>
-
-      <h2>10. Children's Privacy</h2>
-
-      <p>
-        Lain Dain is not specifically designed for children.
-      </p>
-
-      <p>
-        Users should only provide information that they are legally permitted
-        to store and manage.
-      </p>
-
-      <h2>11. Third-Party Services</h2>
-
-      <p>
-        Lain Dain relies on third-party services including Google Firebase,
-        Google AdMob, Google Play Services, and OneSignal.
-      </p>
-
-      <p>
-        These services process information according to their own terms and
-        privacy policies.
-      </p>
-
-      <h2>12. Changes to This Privacy Policy</h2>
-
-      <p>
-        This Privacy Policy may be updated when Lain Dain's features or data
-        practices change.
-      </p>
-
-      <p>
-        The latest version will be published at:
-      </p>
-
-      <p>
-        <a
-          href="https://waleed123e.github.io/LainDain-Privacy/"
-          target="_blank"
-          rel="noopener noreferrer">
-          https://waleed123e.github.io/LainDain-Privacy/
-        </a>
-      </p>
-
-      <h2>13. Contact</h2>
-
-      <p>
-        For privacy-related questions or requests, users may contact the developer
-        using the contact information provided on the Lain Dain Google Play listing.
-      </p>
-
-    </div>
-
-    <div class="footer">
-      © 2026 Lain Dain. All rights reserved.
-    </div>
-
-  </div>
+    <h2>14. رابطہ</h2>
+    <p>رازداری کے سوالات یا درخواستوں کے لیے <a class="ltr" href="mailto:waleediqbale678@gmail.com">waleediqbale678@gmail.com</a> پر رابطہ کریں۔ یہی سپورٹ ای میل <a href="https://play.google.com/store/apps/details?id=com.waleedinc.laindain">گوگل پلے پر <span>رقم نوٹ</span> کے آفیشل صفحے</a> پر درج ہے۔</p>
+  </section>
+  <footer>© 2026 Raqam Note · Waleed Inc</footer>
+</main>
 </body>
 </html>
